@@ -8,12 +8,12 @@ pipeline {
     }
     stages {
 
-        stage('Checkout') {
-            steps {
-                git url: 'https://github.com/Santosh31012001/pipeline-demo1.git', branch: 'main'
-                sh "ls -ltr"
-            }
-        }
+        // stage('Checkout') {
+        //     steps {
+        //         git url: 'https://github.com/Santosh31012001/pipeline-demo1.git', branch: 'main'
+        //         sh "ls -ltr"
+        //     }
+        // }
         stage('Setup') {
             steps {
                 sh "pip install -r requirements.txt"
